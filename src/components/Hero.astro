@@ -1,0 +1,71 @@
+---
+
+
+---
+
+<section class="hero">
+  <img src="public/images/products/hero.jpg" alt="" class="hero-img">
+  <div class="hero-section">
+    <h1 class="h-title">Origen by longos</h1>
+    <p class="h-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eaque earum laboriosam
+      quidem, similique odit!</p>
+    <button class="h-c2a">Comprar en Linea</button>
+  </div>
+</section>
+
+<style>
+  .hero {
+  max-width: var(--max-width);
+  height: calc(80svh - var(--header-height));
+  display: flex;
+  margin-inline: auto;
+  margin-block: 10svh;
+  background: rgb(228, 230, 231);
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0 0.4rem 2rem 0.1rem rgba(0, 0, 0, 0.3);
+  scroll-snap-align: end;
+  }
+
+  .hero-img {
+    height: 110%;
+    mask-image: linear-gradient(to left, transparent 10%, black 50%);
+    mask-mode: alpha;
+    width: 45%;
+    object-fit: cover;
+  }
+
+  .hero-section {
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    padding: 10svh 2rem;
+    height: 100%;
+    width: 100%;
+    flex: 1;
+    margin-inline: auto;
+  }
+
+  .h-title {
+    color: var(--red-origen);
+    margin-bottom: 4svh;
+    font-size: 2.4rem;
+  }
+
+  .h-text {
+    padding-left: 1rem;
+  }
+
+  .h-c2a {
+    margin-top: auto;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    background-color: var(--red-origen);
+    padding: 0.8rem 4rem;
+    font-size: 2rem;
+    border-radius: 1.4rem;
+    color: aliceblue;
+    box-shadow: 0 0.1rem 0.5rem 0rem rgba(0, 0, 0, 0.6);
+
+  }
+</style>
