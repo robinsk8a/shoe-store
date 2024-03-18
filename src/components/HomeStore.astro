@@ -1,5 +1,6 @@
 ---
 const {products} = Astro.props;
+const imgPath = "../../public/images/products/"
 ---
 
 <section class="store-section">
@@ -8,7 +9,7 @@ const {products} = Astro.props;
       <div class="display__wrap">
         {
           products.map((product: any) => (
-            <img src={"public/images/products/" + product.photo} alt="Card Image" class="display__img" />
+            <img src={imgPath + product.photo} alt="Card Image" class="display__img" />
           ))
         }
       </div>
@@ -19,7 +20,7 @@ const {products} = Astro.props;
         products.map((product: any) => (
           <div class="prod-card">
             <div class="card__wrap">
-              <img src={"public/images/products/" + product.photo} alt="Card Image" class="card__img" />
+              <img src={imgPath + product.photo} alt="Card Image" class="card__img" />
               <div class="card__content">
                 <div class="c-content__likes">
                   <p>6</p>
